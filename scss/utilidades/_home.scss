@@ -1,0 +1,195 @@
+
+$color-primary: #f1aef1;
+$color-secundary: rgb(166, 166, 166);
+$color-tercery: #ffffff;
+$color-cuartery:black;
+$color-quintary: #d04cce; 
+
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    header {
+        padding: 30px 0; 
+        .nav-menu {
+            position: fixed; //Fijo en la parte superior 
+            width: 100%; 
+            background-color:$color-tercery;
+            z-index: 1000; // Asegura que el menú esté por encima del contenido 
+            padding: 30px;
+            .menu {
+                display: flex;
+                justify-content: center;
+                list-style: none; //Elimina las viñetas
+                gap: 20px;
+            }
+            .menu li {
+                margin: 0 20px;
+            }
+            .menu a {
+                color: $color-secundary;
+                text-decoration: none; //Elimina el subrayado 
+                font-size: 16px;
+                padding: 5px 10px;
+                transition: background-color 0.3s, color 0.3s; //Transición suave para efectos de hover
+            }
+            .menu a:hover {
+                    background-color: $color-primary; 
+                    color: $color-tercery; 
+            }
+        }
+    }
+                    
+        
+    /* ESTILOS DE HOME */
+    main {
+        .titulo-retratandolos{
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .logo-camara {
+            text-align: center;
+            padding: 20px;
+        }
+        .imagenes-presentacion {
+            display: flex;
+            gap: 10px;
+        }
+        .img-home {
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+            object-fit: cover; // Mantiene las proporciones de la imagen y recorta si es necesario 
+        }
+        .parrafo-1 {
+            padding: 20px;
+            color: $color-secundary;
+            font-size: 20px;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .boton {
+            display: inline-block;
+            margin: 10px auto 40px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: $color-primary;
+            color: $color-tercery;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            &:hover {
+            background-color: $color-quintary;
+            }
+        }
+        .contenido-1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-primary;
+            padding: 20px;
+            height: 50vh;
+        }
+        .texto-contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            h2{
+                color: $color-tercery;
+                margin-left: 90px;
+                font-size: 30px;
+                text-align: left;
+            }
+            p{
+                margin-right: 65px;
+                margin-left: 50px;
+                text-align: left;
+                font-size: 25px;
+                color: $color-tercery;
+                font-family: "Libre Baskerville", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+        .img-content {
+            width: 300px;
+            height: 400px;
+            margin-right: 80px;
+        }
+        .contenido-3 {
+            align-items: center; 
+            gap: 20px; 
+            padding: 20px;  
+            border-radius: 10px; // Bordes redondeados
+        }
+        .titulo-1{
+            color: $color-secundary;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    
+        .opiniones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            h4{
+                color: gray;
+            }
+            p{
+                color: $color-secundary;
+                font-size: 15px;
+            }
+        }
+        .clientes {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
+            padding: 20px;
+            width: 300px;
+        }
+        
+        .img-cliente {
+            width: 250px;
+            height: 250px; 
+            border-radius: 50%; // Imagen circular 
+            object-fit: cover; // Mantiene la imagen dentro del círculo 
+            margin-bottom: 10px;
+        }
+        .titulo3{
+            color: $color-primary;
+            margin-bottom: 40px;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .mail{
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        padding: 20px;
+        .logo-link {
+            display: inline-block;
+        }
+        .logo-red{
+            color: $color-quintary;
+            &:hover {
+                transform: scale(1.1); // Efecto de zoom en hover 
+            }
+        }   
+    }
+}
+

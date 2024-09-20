@@ -1,0 +1,111 @@
+/*ESTILOS DE PREGUNTAS FRECUENTES*/
+main{ 
+    .titulo-preguntas{
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 70px;
+    }
+    .banner{
+        width: 1000px;
+        height: 400px;
+    }
+    .preg-item {
+        border-radius: 8px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+    }   
+
+    .faq-header {
+        display: flex;
+        align-items:center;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .faq-header::-webkit-details-marker {
+        display: none; /* Elimina el marcador por defecto del <summary> */
+    }
+
+    .icon-huella {
+        width: 30px;
+        height: auto;
+        margin-left: 200px;
+    }
+    .icon-flecha{
+        color: gray;
+        margin-right: 200px;
+    }
+    .question {
+        flex: 1;
+        font-size: 18px;
+        color: #333;
+        margin-left: 20px;
+        text-align: left;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+    }
+    .answer {
+        padding: 15px;
+        display: none; /* Inicialmente oculto */
+        text-align: left;
+        margin-left: 200px;
+        margin-right: 200px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        p{
+            color: $color-secundary;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+        }
+    }
+    details[open] .answer {
+        display: block; /* Muestra la respuesta cuando el <details> está abierto */
+        max-height: 200px;
+    }
+    .contenido-7 {
+        display: flex; 
+        justify-content: center; 
+        gap: 10px; 
+        padding: 30px;
+    }
+
+    .contenido-7 img {
+        width: 400px; 
+        height: 500px;  
+        padding: 30px;
+    }
+
+    a.button-2 {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: $color-primary;
+        color: $color-tercery;
+        border-radius: 5px;
+        text-align: center;
+    }
+  
+    a.button-2:hover {
+    background-color: $color-quintary;
+    }
+    .titulo-2{
+        padding: 20px;
+        color:$color-primary;
+    }
+}
+
+footer{
+    .mail{
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+}
+

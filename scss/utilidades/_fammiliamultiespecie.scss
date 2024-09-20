@@ -1,0 +1,73 @@
+
+/* Estilo de FAMILIA MULTIESPECIE*/
+header {
+    padding: 30px 0; // Espaciado superior e inferior del menú 
+    .nav-menu {
+        position: fixed; // Fijo en la parte superior 
+        top: 0;
+        left: 0;
+        width: 100%; // Ocupa todo el ancho de la pantalla 
+        background-color: #ffffff; // Color de fondo del menú
+        padding: 10px 0;
+        z-index: 1000; // Asegura que el menú esté por encima del contenido 
+    }
+    
+    .menu {
+        display: flex; // Muestra los elementos del menú en línea 
+        justify-content: center; // Centra los elementos del menú horizontalmente 
+        margin: 0;
+        padding: 0;
+        list-style: none; // Elimina las viñetas 
+    }
+     
+    .menu li {
+        margin: 0 20px; /* Espacio entre los elementos del menú */
+    }
+    
+    .menu a {
+        color: rgb(166, 166, 166); /* Color del texto del menú */
+        text-decoration: none; /* Elimina el subrayado */
+        font-size: 16px; /* Tamaño de la fuente */
+        padding: 5px 10px;
+        transition: background-color 0.3s, color 0.3s; /* Transición suave para efectos de hover */
+    }
+    
+    .menu a:hover {
+        background-color: #f1aef1; /* Color de fondo al pasar el ratón */
+        color: #ffffff; /* Color del texto al pasar el ratón */
+    }
+} 
+
+main{ 
+    .titulo-multiespecie{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);  
+        gap: 10px; 
+    }
+    .image-item {
+        position: relative;
+        overflow: hidden; 
+    }
+    .image-item img {
+        width: 300px; 
+        height: 300px; 
+        display: block; 
+        object-fit: cover; 
+    }
+}
+
+footer{
+    .mail{
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+}
